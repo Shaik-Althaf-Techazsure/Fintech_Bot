@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Voice Assistant (MVP)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> Contextual Guardian</h1>
+            <p class="subtitle">Secure Voice Banking on Backbase EBP</p>
+        </div>
+
+        <div id="proactive-alert"></div>
+
+        <div id="chat-log" class="chat-log">
+            <div class="message system-msg">
+                Welcome, Jane Doe. How can I assist with your finances today?
+            </div>
+        </div>
+
+        <div id="quick-actions" class="quick-actions-widget">
+            <button class="action-btn" data-command="transfer 150 to Sarah">Pay Sarah</button>
+            <button class="action-btn" data-command="What are your loan rates">Loan Inquiry</button>
+            <button class="action-btn" data-command="What is my balance">Check Balance</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type command (e.g., send 450 to Sarah)">
+            <button id="send-btn">🎤 Send Command</button>
+        </div>
+        
+        <div class="footer">
+            <p>Developed by Team TechAZsure</p>
+            <p style="font-style: italic; font-size: 0.9em; margin-top: 5px;">
+                Innovation Showcase: Contextual Security Logic leveraging the Intelligence Fabric.
+            </p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

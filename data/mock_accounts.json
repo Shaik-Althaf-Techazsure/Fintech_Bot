@@ -1,0 +1,118 @@
+{
+    "user_details": {
+        "user_id": "cust123",
+        "name": "Jane Doe",
+        "primary_account": "1001-9876",
+        "balance": 6950.5
+    },
+    "beneficiaries": {
+        "Sarah": "2002-1234",
+        "Rent": "3003-5678"
+    },
+    "transaction_history": [
+        {
+            "recipient": "Sarah",
+            "amount": 100.0,
+            "type": "Normal"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 150.0,
+            "type": "Normal"
+        },
+        {
+            "recipient": "Rent",
+            "amount": 1500.0,
+            "type": "Normal"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 50.0,
+            "type": "Normal"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 450,
+            "type": "Voice Transfer"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 450,
+            "type": "Voice Transfer"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 150,
+            "type": "Voice Transfer"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 1200,
+            "type": "Voice Transfer"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 150,
+            "type": "Voice Transfer"
+        },
+        {
+            "recipient": "Jane Doe",
+            "amount": 5000,
+            "type": "Top-Up/Deposit"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 150,
+            "type": "Voice Transfer"
+        },
+        {
+            "recipient": "Sarah",
+            "amount": 4000,
+            "type": "Voice Transfer"
+        },
+        {
+            "recipient": "Jane Doe",
+            "amount": 6000,
+            "type": "Top-Up/Deposit"
+        }
+    ],
+    "anomaly_thresholds": {
+        "Sarah": 300.0,
+        "Rent": 2000.0
+    },
+    "credit_details": {
+        "loan_products": [
+            {
+                "name": "Home Loan",
+                "rate": "7.5%",
+                "max_amount": 500000,
+                "details": "Fixed rate for 10 years."
+            },
+            {
+                "name": "Personal Loan",
+                "rate": "11.0%",
+                "max_amount": 50000,
+                "details": "Unsecured loan for 3 years."
+            },
+            {
+                "name": "Credit Limit",
+                "rate": "18.9%",
+                "max_limit": 15000
+            }
+        ]
+    },
+    "reminders": [
+        {
+            "id": 1,
+            "type": "Payment",
+            "description": "Rent Payment",
+            "date": "2025-12-01"
+        },
+        {
+            "id": 2,
+            "type": "Alert",
+            "description": "Low Balance Warning (Under $500)",
+            "date": "Active"
+        }
+    ]
+}
